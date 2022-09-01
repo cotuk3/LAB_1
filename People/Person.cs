@@ -7,6 +7,7 @@ namespace People
         string firstName;
         string lastName;
         string sex;
+        string residence;
         Regex validName = new Regex(@"^[A-Za-z ]+$");
         System.ArgumentException nameIsNotValid = new System.ArgumentException("Text is not valid!!!");
 
@@ -36,7 +37,7 @@ namespace People
                     throw nameIsNotValid;
             }
         }
-        public string LastName 
+        public string LastName
         {
             get
             {
@@ -62,7 +63,17 @@ namespace People
 
             }
         }
-        public string Residence { get; set; }
+        public string Residence
+        {
+            get { return residence; }
+            set
+            {
+                if (validName.IsMatch(value))
+                    residence = value;
+                else
+                    throw nameIsNotValid;
+            }
+        }
         public virtual string SleepVertical()
         {
             string res = $"{Regex.Replace(this.GetType().ToString(), @"\w+.(?<name>\w+)", @"${name}")}" +

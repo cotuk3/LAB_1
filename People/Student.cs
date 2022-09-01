@@ -14,8 +14,10 @@ namespace People
         }
         public Student(string firstName, string lastName, string sex, bool isLivingInDorm, string residence,
              string studentId, string course)
-            : base(firstName, lastName, sex, null)
         {
+            FirstName = firstName;
+            LastName = lastName;
+            Sex = sex;
             StudentId = studentId;
             IsLivingInDorm = isLivingInDorm;
             Residence = residence;

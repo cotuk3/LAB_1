@@ -13,7 +13,7 @@ namespace My_IO
                 "{ \"firstname\": \"(?<firstname>[A-Za-z]+)\",\\s+" +
                 "\"lastname\": \"(?<lastname>[A-Za-z]+)\",\\s+" +
                 "\"sex\": \"(?<sex>[A-Za-z]+)\",\\s+" +
-                "\"residence\": \"(?<residence>\\w+)\",\\s+" +
+                "\"residence\": \"(?<residence>[A-Za-z ]+)\",\\s+" +
                 "\"course\": \"(?<course>[1-6]{1})\",\\s+" +
                 "\"studentId\": \"(?<studentId>[A-Za-z]{2}\\s\\d{8})\"};";
 
@@ -29,15 +29,15 @@ namespace My_IO
             "{ \"firstname\": \"(?<firstname>[A-Za-z]+)\",\\s+" +
             "\"lastname\": \"(?<lastname>[A-Za-z]+)\",\\s+" +
             "\"sex\": \"(?<sex>[A-Za-z]+)\",\\s+" +
-            "\"residence\": \"(?<residence>[A-Za-z]+)\",\\s+" +
-            "\"employer\": \"(?<employer>[A-Za-z]+\\s*[A-Za-z]+)\"};";
+            "\"residence\": \"(?<residence>[A-Za-z ]+)\",\\s+" +
+            "\"employer\": \"(?<employer>[A-Za-z ]+\\s*[A-Za-z]+)\"};";
 
         static string paternSeller = "Seller [A-Za-z]+\\s+" +
             "{ \"firstname\": \"(?<firstname>[A-Za-z]+)\",\\s+" +
             "\"lastname\": \"(?<lastname>[A-Za-z]+)\",\\s+" +
             "\"sex\": \"(?<sex>[A-Za-z]+)\",\\s+" +
-            "\"residence\": \"(?<residence>[A-Za-z]+)\",\\s+" +
-            "\"product\": \"(?<product>[A-Za-z]+)\"};";
+            "\"residence\": \"(?<residence>[A-Za-z ]+)\",\\s+" +
+            "\"product\": \"(?<product>[A-Za-z ]+)\"};";
 
         static string paternPerson = "\\w+ [A-Za-z]+\\s+" +
             "{ \"firstname\": \"(?<firstname>[A-Za-z]+)\",\\s+" +
