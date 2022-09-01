@@ -99,22 +99,28 @@ namespace My_IO
                     student.IsLivingInDorm = true;
                 else
                     student.IsLivingInDorm = false;
-            }
-            else if (person is Seller)
-            {
-                Seller seller = person as Seller;
-                Console.Write($"Enter Product of a {name}: ");
-                seller.Product = Console.ReadLine();
-            }
-            else if (person is Gardener)
-            {
-                Gardener gardener = person as Gardener;
-                Console.Write($"Enter Empolyer of a {name}: ");
-                gardener.Employer = Console.ReadLine();
-            }
 
-            Console.Write($"Enter Residence of a {name}: ");
-            person.Residence = Console.ReadLine();
+                Console.Write($"Enter Residence of a {name}: ");
+                student.Residence = Console.ReadLine();
+            }
+            else
+            {
+                if (person is Seller)
+                {
+                    Seller seller = person as Seller;
+                    Console.Write($"Enter Product of a {name}: ");
+                    seller.Product = Console.ReadLine();
+                }
+                else if (person is Gardener)
+                {
+                    Gardener gardener = person as Gardener;
+                    Console.Write($"Enter Empolyer of a {name}: ");
+                    gardener.Employer = Console.ReadLine();
+                }
+                Console.Write($"Enter Residence of a {name}: ");
+                person.Residence = Console.ReadLine();
+            }
+      
             my.WriteDownPerson(person);
         } //+
 
