@@ -14,7 +14,7 @@ namespace OOP_LAB_1
             Console.Write("Enter path to file where you want to write:");
             string path = Console.ReadLine();
             Regex regex = new Regex(@"\.txt$");
-            
+
             if (regex.IsMatch(path))
             {
                 IO my = new IO();

@@ -60,7 +60,7 @@ namespace My_IO
         } //+
 
         public Person[] ReadAllFromFile()
-        {  
+        {
             if (Count() > 0)
             {
                 Person[] persons = new Person[Count()];
@@ -70,14 +70,14 @@ namespace My_IO
                 {
                     persons[index] = new Student(m.Groups["firstname"].ToString(),
                         m.Groups["lastname"].ToString(), m.Groups["sex"].ToString(),
-                          false, m.Groups["residence"].ToString(),  m.Groups["studentId"].ToString(), m.Groups["course"].ToString());
+                          false, m.Groups["residence"].ToString(), m.Groups["studentId"].ToString(), m.Groups["course"].ToString());
                     index++;
                 }
                 for (Match m = Patterns.regexStD.Match(DisplayAllFromFile()); m.Success; m = m.NextMatch())
                 {
                     persons[index] = new Student(m.Groups["firstname"].ToString(),
                         m.Groups["lastname"].ToString(), m.Groups["sex"].ToString(),
-                        true, m.Groups["residence"].ToString(),  m.Groups["studentId"].ToString(), m.Groups["course"].ToString());
+                        true, m.Groups["residence"].ToString(), m.Groups["studentId"].ToString(), m.Groups["course"].ToString());
                     index++;
                 }
                 for (Match m = Patterns.regexG.Match(DisplayAllFromFile()); m.Success; m = m.NextMatch())
@@ -99,7 +99,7 @@ namespace My_IO
             }
             else
                 return null;
-            
+
         }  //+
         public Person[] Search()
         {
@@ -114,7 +114,6 @@ namespace My_IO
                         true, m.Groups["residence"].ToString(), m.Groups["studentId"].ToString(), m.Groups["course"].ToString());
                     index++;
                 }
-
                 return persons;
             }
             else

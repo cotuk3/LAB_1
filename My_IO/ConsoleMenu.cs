@@ -1,8 +1,8 @@
 ﻿using People;
 using System;
+using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
-using System.IO;
 
 
 namespace My_IO
@@ -25,8 +25,8 @@ namespace My_IO
 
             " /sleepvertical - all persons in file start to sleep vertical;\n" +
             " /study - all student starts to study;\n\n" +
-            
-   
+
+
             " /end - end program.");
         } //+
         public static void Persons()
@@ -120,7 +120,7 @@ namespace My_IO
                 Console.Write($"Enter Residence of a {name}: ");
                 person.Residence = Console.ReadLine();
             }
-      
+
             my.WriteDownPerson(person);
         } //+
 
@@ -133,9 +133,9 @@ namespace My_IO
             if (persons == null)
                 return;
 
-            for(int i = 0; i < search.count; i++)
+            for (int i = 0; i < search.count; i++)
             {
-                Console.WriteLine($"{i+1}." + persons[i] + Environment.NewLine);
+                Console.WriteLine($"{i + 1}." + persons[i] + Environment.NewLine);
             }
         } //+
 
@@ -147,7 +147,7 @@ namespace My_IO
 
             for (int i = 0; i < persons.Length; i++)
             {
-                Console.WriteLine($"{i+1}." + persons[i] + Environment.NewLine);
+                Console.WriteLine($"{i + 1}." + persons[i] + Environment.NewLine);
             }
         } //+
 
@@ -178,7 +178,7 @@ namespace My_IO
             Person[] persons = my.ReadAllFromFile();
             my.ClearFile();
 
-            Array.Copy(persons, index, persons, index-1,
+            Array.Copy(persons, index, persons, index - 1,
                 persons.Length - index);
 
             persons[persons.Length - 1] = null;
@@ -187,8 +187,8 @@ namespace My_IO
                 Show(my);
                 return;
             }
-            
-            for(int i = 0; i < persons.Length -1; i++)
+
+            for (int i = 0; i < persons.Length - 1; i++)
             {
                 my.WriteDownPerson(persons[i]);
             }

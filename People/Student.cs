@@ -50,8 +50,8 @@ namespace People
                     Regex regexDorm = new Regex(@"^\d{1,2}-\d{3}$");
                     if (regexDorm.IsMatch(value))
                         residence = value;
-                    else                    
-                        throw new ArgumentException("Wrong Format of Residence!");                    
+                    else
+                        throw new ArgumentException("Wrong Format of Residence!");
                 }
                 else
                     residence = value;
@@ -70,7 +70,7 @@ namespace People
                     throw new ArgumentException("Wrong Course!");
             }
         }
-    
+
         public string Study()
         {
             string res = $"Student with name: {FirstName} {LastName} is studying in {Course} year";
