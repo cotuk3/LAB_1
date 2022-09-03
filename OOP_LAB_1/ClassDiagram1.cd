@@ -1,48 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="OOP_LAB_1.Program" Collapsed="true">
-    <Position X="12" Y="6.5" Width="1.5" />
+    <Position X="12" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="My_IO.ConsoleMenu" Collapsed="true">
-    <Position X="14.75" Y="2.5" Width="1.5" />
+    <Position X="15.5" Y="2.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="My_IO.IO" Collapsed="true">
-    <Position X="16.5" Y="2.5" Width="1.5" />
+    <Position X="15.5" Y="3.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="My_IO.Patterns" Collapsed="true">
-    <Position X="14.75" Y="3.5" Width="1.5" />
+    <Position X="15.5" Y="1.5" Width="1.5" />
     <TypeIdentifier />
-  </Class>
-  <Class Name="People.Gardener" Collapsed="true">
-    <Position X="5.5" Y="3.75" Width="1.5" />
-    <Compartments>
-      <Compartment Name="Properties" Collapsed="true" />
-      <Compartment Name="Methods" Collapsed="true" />
-    </Compartments>
-    <TypeIdentifier />
-    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="People.Person" Collapsed="true">
-    <Position X="7.75" Y="2.5" Width="1.5" />
+    <Position X="8.75" Y="2" Width="1.5" />
     <TypeIdentifier />
-    <Lollipop Position="0.2" />
+    <Lollipop Orientation="Left" Position="0.237" />
   </Class>
   <Class Name="People.Seller" Collapsed="true">
-    <Position X="7.75" Y="3.75" Width="1.5" />
+    <Position X="8.75" Y="3.25" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="People.Student" Collapsed="true">
-    <Position X="10" Y="3.75" Width="1.5" />
+    <Position X="11" Y="3.25" Width="1.5" />
     <TypeIdentifier />
   </Class>
+  <Class Name="People.Gardener" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
   <Interface Name="People.IVerticalSleep" Collapsed="true">
-    <Position X="10.5" Y="2" Width="1.5" />
+    <Position X="6.5" Y="2" Width="1.5" />
     <TypeIdentifier />
   </Interface>
   <Font Name="Segoe UI" Size="9" />
