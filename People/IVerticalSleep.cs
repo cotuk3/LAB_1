@@ -1,6 +1,6 @@
 ﻿namespace People
 {
-    internal interface IVerticalSleep //<T> where T : Person
+    public interface IVerticalSleep //<T> where T : Person
     {
         string SleepVertical();
     }

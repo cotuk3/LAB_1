@@ -1,6 +1,6 @@
 ﻿namespace People
 {
-    public class Gardener : Person, IVerticalSleep
+    public class Gardener : Person
     {
         public Gardener()
         {
