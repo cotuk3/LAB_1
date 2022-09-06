@@ -218,7 +218,11 @@ namespace My_IO
             }
             foreach (Student student in people)
             {
-                Console.WriteLine(student.Study());
+                if (student is Student)
+                {
+                    Console.WriteLine(student.Study());
+                }
+
             }
         }
     }
