@@ -216,14 +216,9 @@ namespace My_IO
                 Console.WriteLine("File is empty!!!");
                 return;
             }
-            foreach (Person person in people)
+            foreach (Student student in people)
             {
-                if (person is Student)
-                {
-                    Student student = (Student)person;
-                    Console.WriteLine(student.Study());
-                }
-
+                Console.WriteLine(student.Study());
             }
         }
     }
