@@ -8,7 +8,7 @@ namespace People
         string lastName;
         string sex;
         string residence;
-        Regex validName = new Regex(@"^[A-Za-z ]+$");
+        protected Regex validName = new Regex(@"^[A-Za-z ]+$");
         System.ArgumentException nameIsNotValid = new System.ArgumentException("Text is not valid!!!");
 
         public Person()
