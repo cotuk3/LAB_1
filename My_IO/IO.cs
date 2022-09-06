@@ -30,7 +30,7 @@ namespace My_IO
         {
             StringBuilder res = new StringBuilder();
 
-            res.Append($"{Regex.Replace(person.GetType().ToString(), @"\w+.(?<name>\w+)", @"${name}")}" +
+            res.Append($"{person.GetType().Name}" +
                 $" {person.FirstName}{person.LastName}\n");
             res.Append($"{{ \"firstname\": \"{person.FirstName}\",\n" +
                 $"\"lastname\": \"{person.LastName}\",\n" +

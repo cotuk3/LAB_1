@@ -76,7 +76,7 @@ namespace People
         }
         public virtual string SleepVertical()
         {
-            string res = $"{Regex.Replace(this.GetType().ToString(), @"\w+.(?<name>\w+)", @"${name}")}" +
+            string res = $"{GetType().Name}" +
                 $" with name {FirstName} {LastName} is sleeping vertical in {Residence}";
             return res;
         }
